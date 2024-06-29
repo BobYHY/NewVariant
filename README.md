@@ -6,7 +6,7 @@ During the COVID-19 pandemic, the highly variable SARS-CoV-2 virus frequently un
 ## Environment Setup
 - Python 3
 - Numpy
-- BioPython
+- Biopython
 
 ## Data in this study
 The csv file containing sequence information and the fasta file (zip format )containing sequences are all available.
