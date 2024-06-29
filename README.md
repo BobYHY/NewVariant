@@ -9,12 +9,12 @@ During the COVID-19 pandemic, the highly variable SARS-CoV-2 virus frequently un
 - Biopython
 
 ## Data in this study
-The csv file containing sequence information and the fasta file (zip format )containing sequences are all available.
+The csv file containing sequence information and the fasta file (zip format) containing sequences are all available.
 
 ## Generate distance matrix under the optimal metric
 
-Let Fasta_Filename = the name of your fasta file, then run the code "metric.py".
+Let Fasta_Filename = [the name of your fasta file], then run the code "metric.py".
 
 ## Detect new variants
 
-Let Csv_Filename = the name of your file containing variant labels (npy format), then run the code "algorithm1.py".
+Let Csv_Filename = [the name of your file containing variant labels] (npy format), then run the code "algorithm1.py".
