@@ -49,8 +49,10 @@ def distance(X):
   H = np.tile(np.diag(G), (n,1))
   return np.sqrt(H + H.T - 2*G)
 
+Fasta_Filename="SARSCoV2.fasta"
+
 seq=[]
-for read in SeqIO.parse("Select.fasta", "fasta"):
+for read in SeqIO.parse(Fasta_Filename, "fasta"):
     seq.append((read.seq).__str__())
 N=len(seq)
 
