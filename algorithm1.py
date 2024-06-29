@@ -3,8 +3,12 @@ import numpy as np
 dis = np.load('Optimal_distance.npy', allow_pickle=True)
 n,_=dis.shape
 dis=dis+np.diag([float("inf")] * n)
-family = np.load('Select_family.npy', allow_pickle=True)
-faindex={"Alpha":[],"Beta":[],"Gamma":[],"Delta":[], "Omicron":[],"Epsilon":[],"Zeta":[],"Eta":[],"Iota":[],"Kappa":[],"Lambda":[],"Mu":[]}
+Csv_Filename="family.npy"
+family = np.load(Csv_Filename, allow_pickle=True)
+Uniquefamily= np.unique(family)
+faindex={}
+for fa in Uniquefamily:
+    faindex[fa]=[]
 for i in range(len(family)):
     faindex[family[i]].append(i)
 
